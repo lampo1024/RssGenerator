@@ -8,7 +8,7 @@ namespace RssGenerator.Controllers
     [ApiController]
     public class RssController : ControllerBase
     {
-        [HttpGet()]
+        [HttpGet("/api/rss/blog.xml")]
         public IActionResult Blog()
         {
             var feed = new Feed()
